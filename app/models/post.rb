@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  validates :title, :url, :user_id, presence: true
+  validates :title, :url, :user, presence: true
   validates :url, uniqueness: true
 
   belongs_to :user
